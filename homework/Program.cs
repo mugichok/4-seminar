@@ -36,30 +36,48 @@
 // Console.WriteLine($"Массив элементов: [{string.Join(", ",array)}]");
 
 // Дана последовательность из N целых чисел и число K. Необходимо сдвинуть всю последовательность (сдвиг - циклический) на |K| элементов вправо, если K – положительное и влево, если отрицательное.
-Console.Clear();
-Console.WriteLine("Введите размер массива: ");
-int x = int.Parse(Console.ReadLine()!);
-int[] array = int new[x];
-for(int i = 0; i < x; i++)
-{
-    ConsoleWriteLine("Введите элемент массива: ");
-    int n = int.Parse(Console.ReadLine()!);
-    array[i] = n;
-}
-Console.WriteLine("Введите число для сдвига: ");
-int y = int.Parse(Console.ReadLine()!);
-if(y > 0)
-{
-    for( int j = 0; j > y; j++)
-    {
-        array[j] = array[j+1];
-    }
-}
-else
-{
-    for( int h = 0; h > Math.Abs(y); h++)
-    {
-        array[h] = array[x-h];
-    }
-}
-Console.WriteLine(array);
+// Console.Clear();
+// Console.WriteLine("Введите размер массива: ");
+// int x = int.Parse(Console.ReadLine()!);
+// int[] array = new int[x];
+// for(int i = 0; i < x; i++)
+// {
+//     Console.WriteLine("Введите элемент массива: ");
+//     int n = int.Parse(Console.ReadLine()!);
+//     array[i] = n;
+// }
+// Console.WriteLine($"Изначальный массив элементов: [{string.Join(", ",array)}]");
+// Console.WriteLine("Введите число для сдвига: ");
+// int y = int.Parse(Console.ReadLine()!);
+// if(y > 0)
+// {
+//     for( int i = 0; i <= y; i++)
+//     {
+//         array[i + 1] = array[i];
+//     }
+    
+// }
+// else
+// {
+//     for( int i = 0; i <= Math.Abs(y); i++)
+//     {
+//         array[x - i] = array[x-i -1];
+//         array[x] = array[0];
+//     }
+// }
+// Console.WriteLine($"Сдвинутый массив элементов: [{string.Join(", ",array)}]");
+
+// Известно, что любое чётное число, большее 2, представимо в виде суммы 2 простых чисел, причём таких разложений может быть несколько. Впервые гипотезу о существовании данного разложения сформулировал математик Х. Гольдбах. Требуется написать программу, производящую согласно утверждению Гольдбаха, разложение заданного чётного числа. Из всех пар простых чисел, сумма которых равна заданному числу, требуется найти пару, содержащую наименьшее простое число.
+// Console.Clear();
+// Console.WriteLine("Введите число: ");
+// int x = int.Parse(Console.ReadLine()!);
+// while(x < 2 || x%2 != 0)
+// {
+//     Console.WriteLine("число меньше двух или нечётное!/nВведите другое число: ");
+//     x = int.Parse(Console.ReadLine()!);
+// }
+// x = x1+x2;
+// for(int i=2; i < x-1; i++)
+// {
+
+// }
